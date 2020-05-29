@@ -21,7 +21,7 @@ import android.content.Context
 import java.util.Calendar;
 
 
-
+//Test comment for git
 class velkommen : AppCompatActivity() {
     var mDisplayDate: TextView? = null
     var mDateSetListener: DatePickerDialog.OnDateSetListener? = null
