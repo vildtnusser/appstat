@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/pumpeRight_name1"
+        android:layout_width="89dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pumpeRight_age1"
+        android:layout_width="81dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:text="Age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/pumpeRight_stop1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="109dp"
+        android:text="Stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pumpeRight_tid1" />
+
+    <Chronometer
+        android:id="@+id/pumpeRight_tid1"
+        android:layout_width="165dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="73dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pumpeRight_age1" />
+
+    <TextView
+        android:id="@+id/pumpeRight_right1"
+        android:layout_width="88dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="50dp"
+        android:text="Right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pumpeRight_name1" />
+
+    <TextView
+        android:id="@+id/pumpeRight_hist1"
+        android:layout_width="317dp"
+        android:layout_height="277dp"
+        android:layout_marginTop="30dp"
+        android:text="Historik(startstid, længde, bryst side, afstand)"
+        app:layout_constraintTop_toBottomOf="@+id/pumpeRight_stop1"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <TextView
+        android:id="@+id/pumpeRight_ml"
+        android:layout_width="81dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:text="antal mL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pumpeRight_right1" />
+
+</android.support.constraint.ConstraintLayout>

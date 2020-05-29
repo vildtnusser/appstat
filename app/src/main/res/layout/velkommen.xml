@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+   >
+    <TextView
+        android:id="@+id/velkommen1"
+        android:layout_width="296dp"
+        android:layout_height="109dp"
+        android:text="Congrats and Welcome"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:id="@+id/babyName"
+        android:layout_width="298dp"
+        android:layout_height="106dp"
+        android:hint="Name of Baby"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/birthDate"
+        android:layout_width="286dp"
+        android:layout_height="130dp"
+        android:hint= "Select day of Birth"
+        android:textSize="30sp"
+        />
+
+    <Button
+        android:id="@+id/videre2start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's go"
+        />
+
+</LinearLayout>

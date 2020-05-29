@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sleepLeft_name1"
+        android:layout_width="89dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sleepLeft_age1"
+        android:layout_width="81dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:text="Age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sleepLeft_stop1"
+        android:layout_width="135dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="154dp"
+        android:text="Stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleepLeft_tid1" />
+
+    <Chronometer
+        android:id="@+id/sleepLeft_tid1"
+        android:layout_width="144dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="73dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleepLeft_age1" />
+
+    <TextView
+        android:id="@+id/sleepLeft_left1"
+        android:layout_width="88dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="50dp"
+        android:text="Left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleepLeft_name1" />
+
+    <TextView
+        android:id="@+id/sleepLeft_hist1"
+        android:layout_width="282dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="30dp"
+        android:text="Historik(startstid, længde,type, afstand)"
+        app:layout_constraintTop_toBottomOf="@+id/sleepLeft_stop1"
+        tools:layout_editor_absoluteX="48dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.app1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="bleScreen"></activity>
+
+        <activity android:name=".diverseScreen"></activity>
+
+        <activity android:name="logScreen"></activity>
+
+        <activity android:name="maalScreen"></activity>
+
+        <activity android:name="madBottleScreen_Timer"></activity>
+
+        <activity android:name="madLeftScreen_Timer"></activity>
+
+        <activity android:name="madMealScreen"></activity>
+
+        <activity android:name="madRightScreen_Timer"></activity>
+
+        <activity android:name="madScreen"></activity>
+
+        <activity android:name="pumpeBothScreen"></activity>
+
+        <activity android:name="pumpeLeftScreen"></activity>
+
+        <activity android:name="pumpeRightScreen"></activity>
+
+        <activity android:name="pumpeScreen"></activity>
+
+        <activity android:name="sleepLeftScreen_Timer"></activity>
+
+        <activity android:name="sleepRightScreen_Timer"></activity>
+
+        <activity android:name="sleepScreen"></activity>
+
+        <activity android:name="startsScreen"></activity>
+
+        <activity android:name="statAllScreen"></activity>
+
+        <activity android:name="statBleScreen"></activity>
+
+        <activity android:name="statMaalScreen1"></activity>
+
+        <activity android:name="statMaalScreen2"></activity>
+
+        <activity android:name="statMaalScreen3"></activity>
+
+        <activity android:name="statMadScreen1"></activity>
+
+        <activity android:name="statMadScreen2"></activity>
+
+        <activity android:name="statPumpeScreen"></activity>
+
+        <activity android:name="statSleepScreen1"></activity>
+
+        <activity android:name="statSleepScreen2"></activity>
+
+        <activity android:name="statStart"></activity>
+
+        <activity android:name="velkommen"></activity>
+    </application>
+
+</manifest>

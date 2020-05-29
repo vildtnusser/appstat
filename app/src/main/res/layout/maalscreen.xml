@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/menuMaal_weight"
+        android:layout_width="109dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="weight"
+        app:layout_constraintEnd_toStartOf="@+id/menuMaal_head"
+        app:layout_constraintStart_toEndOf="@+id/menuMaal_height1"
+        app:layout_constraintTop_toTopOf="@+id/menuMaal_head" />
+
+    <TextView
+        android:id="@+id/menuMaal_name1"
+        android:layout_width="93dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/menuMaal_height1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <TextView
+        android:id="@+id/menuMaal_age1"
+        android:layout_width="113dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:text="Age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/menuMaal_height1"
+        android:layout_width="108dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="17dp"
+        android:text="Height"
+        app:layout_constraintBottom_toBottomOf="@+id/menuMaal_weight"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/menuMaal_head"
+        android:layout_width="113dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="17dp"
+        android:text="head"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuMaal_age1" />
+
+    <TextView
+        android:id="@+id/menuMaal_hist1"
+        android:layout_width="371dp"
+        android:layout_height="362dp"
+        android:layout_marginBottom="20dp"
+        android:text="Historik for maal(hoved i cm, højde i cm og vægt i kg + 2 decimaler)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="18dp" />
+</android.support.constraint.ConstraintLayout>

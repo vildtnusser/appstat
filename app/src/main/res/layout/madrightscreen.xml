@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/madRight_name1"
+        android:layout_width="89dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/madRight_age1"
+        android:layout_width="81dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:text="Age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sleepLeft_stop1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="161dp"
+        android:text="Stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/madRight_tid1" />
+
+    <Chronometer
+        android:id="@+id/madRight_tid1"
+        android:layout_width="160dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="73dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/madRight_age1" />
+
+
+    <TextView
+        android:id="@+id/madRight_right1"
+        android:layout_width="88dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="50dp"
+        android:text="Right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/madRight_name1" />
+
+    <TextView
+        android:id="@+id/madRight_hist1"
+        android:layout_width="303dp"
+        android:layout_height="271dp"
+        android:layout_marginTop="30dp"
+        android:text="Historik(startstid, længde,type, afstand)"
+        app:layout_constraintTop_toBottomOf="@+id/madRight_stop1"
+        tools:layout_editor_absoluteX="54dp" />
+
+</android.support.constraint.ConstraintLayout>

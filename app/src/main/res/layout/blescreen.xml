@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/ble_tis1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:text="Pee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ble_name1" />
+
+    <Button
+        android:id="@+id/ble_lort1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Poo"
+        app:layout_constraintBottom_toBottomOf="@+id/ble_tis1"
+        app:layout_constraintEnd_toStartOf="@+id/ble_both"
+        app:layout_constraintStart_toEndOf="@+id/ble_tis1" />
+
+    <Button
+        android:id="@+id/ble_both"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:text="Both"
+        app:layout_constraintBottom_toBottomOf="@+id/ble_lort1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ble_age1" />
+
+    <TextView
+        android:id="@+id/ble_age1"
+        android:layout_width="88dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:text="Age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ble_hist1"
+        android:layout_width="413dp"
+        android:layout_height="325dp"
+        android:text="Historik(tidspunkt, type, afstand)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-3dp" />
+
+    <TextView
+        android:id="@+id/ble_name1"
+        android:layout_width="102dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="200dp"
+        app:layout_constraintEnd_toStartOf="@+id/ble_age1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

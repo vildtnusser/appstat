@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sleep_age1"
+        android:layout_width="109dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:text="Age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sleep_navn1"
+        android:layout_width="107dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sleep_right1"
+        android:layout_width="154dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:text="Right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_age1" />
+
+    <Button
+        android:id="@+id/sleep_left1"
+        android:layout_width="148dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="50dp"
+        android:text="Left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_navn1" />
+
+    <TextView
+        android:id="@+id/sleep_hist"
+        android:layout_width="291dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="30dp"
+        android:text="Historik (startstid, længde, type + afstand)"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_left1"
+        tools:layout_editor_absoluteX="16dp" />
+
+</android.support.constraint.ConstraintLayout>

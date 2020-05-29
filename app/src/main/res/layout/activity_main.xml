@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/menu_name1"
+        android:layout_width="115dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/menu_mad1"
+        app:layout_constraintEnd_toStartOf="@+id/menu_age1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/menu_age1"
+        android:layout_width="115dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Age"
+        app:layout_constraintBottom_toTopOf="@+id/menu_sleep1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/menu_mad1"
+        android:layout_width="195dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Feeding"
+        app:layout_constraintBottom_toTopOf="@+id/menu_ble"
+        app:layout_constraintRight_toLeftOf="@+id/menu_sleep1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_name1" />
+
+    <Button
+        android:id="@+id/menu_sleep1"
+        android:layout_width="195dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="10dp"
+        android:text="Sleep"
+        app:layout_constraintBottom_toTopOf="@+id/menu_maal1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/menu_mad1"
+        app:layout_constraintTop_toBottomOf="@+id/menu_age1" />
+
+    <Button
+        android:id="@+id/menu_ble"
+        android:layout_width="195dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Diapering"
+        app:layout_constraintBottom_toTopOf="@+id/menu_pumpe1"
+        app:layout_constraintEnd_toStartOf="@+id/menu_maal1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_mad1" />
+
+    <Button
+        android:id="@+id/menu_maal1"
+        android:layout_width="195dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="8dp"
+        android:text="Growth"
+        app:layout_constraintBottom_toTopOf="@+id/menu_diverse1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/menu_ble"
+        app:layout_constraintTop_toBottomOf="@+id/menu_sleep1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/menu_pumpe1"
+        android:layout_width="195dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="Pumping"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/menu_diverse1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_ble" />
+
+    <Button
+        android:id="@+id/menu_diverse1"
+        android:layout_width="195dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:text="Diverse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/menu_pumpe1"
+        app:layout_constraintTop_toTopOf="@+id/menu_pumpe1"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

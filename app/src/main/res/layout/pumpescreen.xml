@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/pumpe_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:text="Left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pumpe_name1" />
+
+    <Button
+        android:id="@+id/pumpe_both"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Both"
+        app:layout_constraintBottom_toBottomOf="@+id/pumpe_left"
+        app:layout_constraintEnd_toStartOf="@+id/pumpe_right"
+        app:layout_constraintStart_toEndOf="@+id/pumpe_left" />
+
+    <Button
+        android:id="@+id/pumpe_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="Right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pumpe_both" />
+
+    <TextView
+        android:id="@+id/pumpe_age1"
+        android:layout_width="88dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:text="Age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pumpe_hist1"
+        android:layout_width="288dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="30dp"
+        android:text="Historik(startstid, bryst side, afstand, varighed)"
+        app:layout_constraintTop_toBottomOf="@+id/pumpe_right"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/pumpe_name1"
+        android:layout_width="102dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

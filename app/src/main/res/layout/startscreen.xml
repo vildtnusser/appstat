@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/start_name1"
+        android:layout_width="131dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/start_age1"
+        android:layout_width="112dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="20dp"
+        android:text="Age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/menu1"
+        android:layout_width="306dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="58dp"
+        android:text="Menu"
+        app:layout_constraintBottom_toTopOf="@+id/log1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_name1" />
+
+    <Button
+        android:id="@+id/log1"
+        android:layout_width="310dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="54dp"
+        android:text="Log"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu1" />
+
+    <Button
+        android:id="@+id/stat1"
+        android:layout_width="315dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="49dp"
+        android:text="Data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log1" />
+
+    <TextView
+        android:id="@+id/start_progress1"
+        android:layout_width="322dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="30dp"
+        android:text="In Progress"
+        app:layout_constraintTop_toBottomOf="@+id/stat1"
+        tools:layout_editor_absoluteX="52dp" />
+
+
+</android.support.constraint.ConstraintLayout>
