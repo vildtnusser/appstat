@@ -4,7 +4,6 @@ import android.app.DatePickerDialog;
 import android.content.Intent
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,10 +14,13 @@ import android.widget.TextView;
 import kotlinx.android.synthetic.main.velkommen.*
 import android.content.DialogInterface;
 //import android.content.SharpedPreferences;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.content.Context
+import androidx.appcompat.app.AppCompatActivity
+import androidx.room.Room
 
 import java.util.Calendar;
+import javax.xml.datatype.DatatypeConstants.MONTHS
 
 
 //Test comment for git
@@ -30,6 +32,8 @@ class velkommen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.velkommen)
 
+
+        //Making a calender to pick the date
         val mDisplayDate = findViewById<TextView>(R.id.birthDate)
         mDisplayDate!!.setOnClickListener {
             val cal = Calendar.getInstance()
@@ -44,35 +48,44 @@ class velkommen : AppCompatActivity() {
             dialog.show()
         }
         mDateSetListener =
-            DatePickerDialog.OnDateSetListener { datePicker, year, month, day ->
+                //DatePickerDialog.OnDateSetListener { datePicker, year, month, day -> (original)
+            DatePickerDialog.OnDateSetListener { _, year, month, day ->
                 var month = month
                 month = month + 1
                 Log.d(
-                    TAG,
+                    "velkommen",
                     "onDateSet: dd/mm/yyy: $day/$month/$year"
                 )
                 val date = "$day/$month/$year"
+                //mDisplayDate!!.text = date (original)
                 mDisplayDate!!.text = date
             }
+
+
+        //Moving on to the start screen and keeping the user defined name
 
         val btn_GO = findViewById(R.id.videre2start) as Button
         val Navn = findViewById<EditText>(R.id.babyName)
 
-        btn_GO.setOnClickListener{
-            var navn = Navn.text.toString()
+        btn_GO.setOnClickListener {
+            val navn = Navn.text.toString()
 
-            val intent2Start : Intent = Intent(this@velkommen, startsScreen:: class.java)
-            intent2Start.putExtra("Name",navn)
+            val intent2Start: Intent = Intent(this@velkommen, startsScreen::class.java)
+            intent2Start.putExtra("Name", navn)
             startActivity(intent2Start)
         }
 
-        //skulle gemme værdierne
-        // val safe = onSaveInstanceState(savedInstanceState:Bundle?)
+       /* //skulle gemme værdierne
+        val db = Room.databaseBuilder(
+            applicationContext,
+            AppDatabase::class.java, "first_name"
+        ).build()*/
     }
+}
 
 
-    companion object {
-    private const val TAG = "velkommen"
+   // companion object {
+    //private const val TAG = "velkommen"
 
 /* //(*) SKULLE BRUGES TIL KUN AT ÅBNE FØRSTE GANG
  val prefs = .getSharedPreferences("prefs", Context.MODE_PRIVATE);
@@ -95,8 +108,6 @@ class velkommen : AppCompatActivity() {
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
         editor.putBoolean("firstStart", false);
-        editor.apply();*/
-    }
-}
-
+        editor.apply();*
+    }*/
 

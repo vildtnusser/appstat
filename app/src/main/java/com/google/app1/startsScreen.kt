@@ -3,12 +3,13 @@ package com.google.app1
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
 import android.widget.Toast
 import android.util.Log
 import android.view.View
 import android.widget.TextView
+import androidx.room.Room
 
 class startsScreen : AppCompatActivity() {
     //lateinit var btn_click_me : Button
@@ -17,15 +18,18 @@ class startsScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.startscreen)
 
+    }
+
         // get reference to button
         val btn_menu = findViewById(R.id.menu1) as Button
         val btn_log = findViewById(R.id.log1) as Button
         val btn_stat = findViewById(R.id.stat1) as Button
 
         val intentName = intent
-        val name = intentName.getStringExtra("Name")
+        val name : String? = intentName.getStringExtra("Name")
         val babyName = findViewById<TextView>(R.id.start_name1)
         babyName.text = name
+
 
         // set on-click listener
         btn_menu.setOnClickListener{
@@ -45,6 +49,8 @@ class startsScreen : AppCompatActivity() {
             intentStat.putExtra("Name", babyName.text.toString())
             startActivity(intentStat)
         }
+
+
 
         // your code to perform when the user clicks on the button
         //Toast.makeText(this@MainActivity, "You clicked me.", Toast.LENGTH_SHORT).show()

@@ -2,10 +2,11 @@ package com.google.app1
 
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class logScreen : AppCompatActivity() {
 
